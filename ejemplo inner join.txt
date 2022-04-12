@@ -1,0 +1,13 @@
+EJEMPLO INNER JOIN
+
+//personalizado
+select ta.Nombre 'Nombre', ta.Apellidos 'Apellido', te.Descripcion 'Estado'
+from t_asegurado ta
+INNER JOIN t_estado te
+	ON ta.Cod_Estado = te.Cod_Estado
+
+
+select *
+from t_asegurado ta
+INNER JOIN t_estado te
+	ON ta.Cod_Estado = te.Cod_Estado
